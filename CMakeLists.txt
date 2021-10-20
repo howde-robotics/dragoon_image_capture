@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   seek_driver
   sensor_msgs
+  jsk_rviz_plugins
   std_msgs
 )
 
@@ -108,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES dragoon_image_capture
- CATKIN_DEPENDS cv_bridge image_transport roscpp seek_driver sensor_msgs std_msgs
+ CATKIN_DEPENDS cv_bridge image_transport roscpp seek_driver sensor_msgs std_msgs jsk_rviz_plugins
 #  DEPENDS system_lib
 )
 

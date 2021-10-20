@@ -67,6 +67,7 @@
   <exec_depend>seek_driver</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <depend>jsk_rviz_plugins</depend>
   <!-- <depend>dragoon_messages</depend> -->
 
 
