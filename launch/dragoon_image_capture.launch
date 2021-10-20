@@ -1,0 +1,15 @@
+<launch>
+    <arg name="rgbSaveDirectory" default="$(find dragoon_image_capture)/img_saves/rgb/"/>
+    <arg name="irSaveDirectory" default="$(find dragoon_image_capture)/img_saves/ir/"/>
+    <arg name="temperatureSaveDirectory" default="$(find dragoon_image_capture)/img_saves/temperature/"/>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find dragoon_image_capture)/rviz/layout.rviz" />
+
+    <node pkg="dragoon_image_capture" type="dragoon_image_capture" name="dragoon_image_capture">
+        <param name="rgbSaveDirectory_" value="$(arg rgbSaveDirectory)" />
+        <param name="irSaveDirectory_" value="$(arg irSaveDirectory)" />
+        <param name="temperatureSaveDirectory_" value="$(arg temperatureSaveDirectory)" />
+    </node> 
+    
+
+</launch>
